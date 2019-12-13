@@ -1,0 +1,39 @@
+/* Review Notice */
+
+#lc-review-notice-actions {
+	margin: 5px auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+.lc-review-notice-action {
+	text-decoration: none;
+	padding: 0 16px 0 8px;
+	margin: 5px;
+}
+
+.lc-review-notice-action:first-of-type {
+	margin-left: 0;
+}
+
+.lc-review-notice-action:last-of-type {
+	margin-right: 0;
+}
+
+.lc-review-notice-action span {
+	margin-left: 6px;
+}
+
+@media screen and (max-width: 635px) {
+	#lc-review-notice-actions {
+		flex-flow: column wrap;
+		align-content: flex-start;
+		align-items: baseline;
+	}
+
+	.lc-review-notice-action {
+		margin: 3px 0;
+	}
+}

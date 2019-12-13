@@ -1,0 +1,161 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: LiveChat\n"
+"POT-Creation-Date: 2019-11-26 16:43+0100\n"
+"PO-Revision-Date: 2019-11-12 12:07+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: livechat.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: plugin_files/Helpers/ConfirmIdentityNoticeHelper.class.php:23
+msgid "Action required - confirm your identity"
+msgstr ""
+
+#: plugin_files/Helpers/ConfirmIdentityNoticeHelper.class.php:25
+msgid ""
+"Thank you for updating LiveChat to the latest version. Please click Connect "
+"to confirm your identity and finish the installation."
+msgstr ""
+
+#: plugin_files/Helpers/ConfirmIdentityNoticeHelper.class.php:28
+#: plugin_files/Helpers/ConnectNoticeHelper.class.php:36
+msgid "Connect"
+msgstr ""
+
+#: plugin_files/Helpers/ConnectNoticeHelper.class.php:25
+msgid "Action required - connect LiveChat"
+msgstr ""
+
+#: plugin_files/Helpers/ConnectNoticeHelper.class.php:28
+msgid "Please"
+msgstr ""
+
+#: plugin_files/Helpers/ConnectNoticeHelper.class.php:29
+msgid "connect your LiveChat account"
+msgstr ""
+
+#: plugin_files/Helpers/ConnectNoticeHelper.class.php:30
+msgid "to start chatting with your customers."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:27
+msgid "Cancel"
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:47
+msgid "Quick Feedback"
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:60
+msgid ""
+"If you have a moment, please let us know why you are deactivating LiveChat:"
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:76
+msgid "I no longer need the plugin."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:92
+msgid "I couldn't get the plugin to work."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:108
+msgid "I found a better plugin."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:124
+msgid "It's a temporary deactivation."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:141
+msgid "Other"
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:149
+msgid "Tell us more..."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:154
+msgid "Please choose one of available options."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:157
+msgid "Please provide additional feedback."
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:173
+msgid "Skip & continue"
+msgstr ""
+
+#: plugin_files/Helpers/DeactivationFeedbackFormHelper.class.php:176
+msgid "Send feedback"
+msgstr ""
+
+#: plugin_files/Helpers/ReviewNoticeHelper.class.php:24
+msgid ""
+"Hey, you’ve been using <strong>LiveChat</strong> for more than 14 days - "
+"that’s awesome! Could you please do us a BIG favour and <strong>give "
+"LiveChat a 5-star rating on WordPress</strong>? Just to help us spread the "
+"word and boost our motivation."
+msgstr ""
+
+#: plugin_files/Helpers/ReviewNoticeHelper.class.php:25
+msgid "<strong>&ndash; The LiveChat Team</strong>"
+msgstr ""
+
+#: plugin_files/Helpers/ReviewNoticeHelper.class.php:28
+msgid "Ok, you deserve it"
+msgstr ""
+
+#: plugin_files/Helpers/ReviewNoticeHelper.class.php:31
+msgid "Maybe later"
+msgstr ""
+
+#: plugin_files/Helpers/ReviewNoticeHelper.class.php:34
+msgid "No, thanks"
+msgstr ""
+
+#: plugin_files/LiveChatAdmin.class.php:248
+#: plugin_files/LiveChatAdmin.class.php:249
+#: plugin_files/LiveChatAdmin.class.php:309
+msgid "Settings"
+msgstr ""
+
+#: plugin_files/LiveChatAdmin.class.php:257
+#: plugin_files/LiveChatAdmin.class.php:258
+msgid "Resources"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#. Author of the plugin/theme
+msgid "LiveChat"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.livechatinc.com/addons/wordpress/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Live chat software for live help, online sales and customer support. This "
+"plugin allows to quickly install LiveChat on any WordPress website."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.livechatinc.com"
+msgstr ""

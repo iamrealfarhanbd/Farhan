@@ -1,0 +1,451 @@
+/* Plugin Settings */
+
+.livechat_page_livechat_settings #wpwrap {
+	background: #fff;
+}
+
+.livechat_page_livechat_resources #wpwrap {
+	background: #fff;
+}
+
+.livechat_page_livechat_resources #wpwrap #wpcontent {
+	padding-left: 0;
+}
+
+.livechat_page_livechat_resources #wpwrap #wpcontent #wpbody-content {
+	padding-bottom: 0;
+}
+
+.livechat_page_livechat_resources #wpwrap #wpcontent #resources-container {
+	padding: 0;
+	height: 100vh;
+}
+
+.lc-table {
+	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.lc-column {
+	padding: 10px;
+	width: 50%;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#lc-container, #resources-container {
+	padding-top: 50px;
+	padding-bottom: 10px;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#lc-container > iframe, #resources-container > iframe {
+	width: 100%;
+	height: 100%;
+	box-sizing: content-box;
+}
+
+.lc-table img {
+	max-width: 100%;
+}
+
+#lc-plus-wp {
+	margin-bottom: 30px;
+}
+
+#lc-plus-wp img {
+	width: 100%;
+	max-width: 400px;
+}
+
+iframe#login-with-livechat
+{
+	width: 150px;
+	height: 45px;
+	border: none;
+}
+
+#lc-app-img {
+	width: 100%;
+	max-width: 612px;
+	border-radius: 4px;
+}
+
+.updated.installed p::before {
+	content: '';
+}
+
+.updated.installed {
+	width: auto;
+	position: absolute;
+	top: 1em;
+	left: 25%;
+	transform: translateX(-55%);
+	z-index: 100;
+}
+
+#installed-close {
+	display: block;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	font-size: 10px;
+	cursor: pointer;
+	background: black;
+	color: white;
+	width: 12px;
+	height: 12px;
+	line-height: 10px;
+	text-align: center;
+	border-radius: 6px;
+	z-index: 101;
+}
+
+#lc-webapp {
+	margin: 25px auto 30px;
+}
+
+#logout {
+	text-decoration: underline;
+	cursor: pointer;
+	color: inherit;
+}
+
+.lc-settings-option {
+	position: relative;
+}
+
+.lc-settings-option:hover .lc-css-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+p.lc-settings-option-label {
+	font-weight: 700 !important;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 650px) {
+	.lc-table {
+		flex-flow: row wrap;
+	}
+
+	.lc-column {
+		width: 100%;
+	}
+}
+
+/* Switchers */
+
+.settings {
+	width: 100%;
+	margin: 40px auto 20px auto;
+}
+.settings div {
+	margin: 5px 0;
+}
+.settings .title{
+	width: 220px;
+	margin: 0 10px 10px 0;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: left;
+}
+
+.settings .title span{
+	vertical-align: middle;
+}
+.onoffswitch {
+	text-align: left;
+	position: relative;
+	width: 72px;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	display: inline-block;
+	height: 26px;
+	vertical-align: middle;
+}
+.onoffswitch-checkbox {
+	display: none!important;
+}
+.onoffswitch-label {
+	display: block; overflow: hidden; cursor: pointer;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.onoffswitch-inner {
+	display: block; width: 200%; margin-left: -100%;
+	-moz-transition: margin 0.15s ease-in 0s; -webkit-transition: margin 0.15s ease-in 0s;
+	-o-transition: margin 0.15s ease-in 0s; transition: margin 0.15s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+	display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+	font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-weight: 100;
+}
+.onoffswitch-inner:before {
+	content: "ON";
+	padding-left: 8px;
+	background: #6699cc;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6699cc), color-stop(1, #88bbee));
+	background: -ms-linear-gradient(bottom, #6699cc, #88bbee);
+	background: -moz-linear-gradient(center bottom, #6699cc 0%, #88bbee 100%);
+	background: -o-linear-gradient(#88bbee, #6699cc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#88bbee', endColorstr='#6699cc', GradientType=0);
+	-webkit-box-shadow: inset 0 0 5px #6699cc;
+	-moz-box-shadow: inset 0 0 5px #6699cc;
+	box-shadow: inset 0 0 5px #6699cc;
+	text-shadow: rgb(85, 136, 187) -1px -1px 0;
+}
+.onoffswitch-inner:after {
+	content: "OFF";
+	padding-right: 5px;
+	background: #dddddd;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dddddd), color-stop(1, #ffffff));
+	background: -ms-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -moz-linear-gradient(center bottom, #dddddd 0%, #ffffff 100%);
+	background: -o-linear-gradient(#ffffff, #dddddd);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
+	-webkit-box-shadow: inset 0 0 5px #dddddd;
+	-moz-box-shadow: inset 0 0 5px #dddddd;
+	box-shadow: inset 0 0 5px #dddddd;
+	color: rgb(153, 153, 153);
+	text-align: right;
+}
+.onoffswitch-switch {
+	display: block; width: 33px; margin: 0;
+	background: #cccccc;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(1, #f3f3f3));
+	background: -ms-linear-gradient(bottom, #cccccc, #f3f3f3);
+	background: -moz-linear-gradient(center bottom, #cccccc 0%, #f3f3f3 100%);
+	background: -o-linear-gradient(#f3f3f3, #cccccc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#cccccc', GradientType=0);
+	border: 1px solid rgb(187, 187, 187);
+	position: absolute; top: 0; bottom: 0; right: 37px;
+	-moz-transition: all 0.15s ease-in 0s; -webkit-transition: all 0.15s ease-in 0s;
+	-o-transition: all 0.15s ease-in 0s; transition: all 0.15s ease-in 0s;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 0;
+}
+
+/* Design System and other basic styles */
+
+.lc-design-system-typography * {
+	font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+}
+
+.lc-design-system-typography .material-icons {
+	font-family: "Material Icons";
+}
+
+.lc-design-system-typography p {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #424D57;
+}
+
+.lc-design-system-typography h1 {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 600;
+	color: #424D57;
+}
+
+.lc-design-system-typography h2 {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 600;
+	color: #424D57;
+}
+
+.lc-design-system-typography h3 {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #424D57;
+}
+
+.lc-design-system-typography h4 {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #424D57;
+}
+
+.lc-design-system-typography p a {
+	color: #4384f5;
+}
+
+p.lc-meta-text {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #8e949a;
+}
+
+.lc-btn:hover {
+	color: #424D57;
+}
+
+.lc-btn--primary:hover,
+.lc-btn--primary:active,
+.lc-btn--primary:focus,
+.lc-btn--destructive:hover,
+.lc-btn--destructive:active,
+.lc-btn--destructive:focus {
+	color: #ffffff;
+}
+
+.lc-link-button {
+	text-decoration: none;
+}
+
+/* General Notices */
+
+.lc-notice {
+	border-left-color: #4384F5;
+	padding: 5px 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	min-height: 80px;
+}
+
+.lc-notice-column {
+	min-width: 100px;
+	padding: 0 10px 0 5px;
+}
+
+.lc-notice-logo {
+	max-width: 100px;
+	margin-top: 15px;
+}
+
+.lc-btn .material-icons {
+	font-size: 1.25em;
+	margin-top: 2px;
+}
+
+/* Connect Notice */
+
+#lc-connect-notice-header {
+	font-weight: bold;
+}
+
+#lc-connect-notice-button-column {
+	display: flex;
+	flex-grow: 1;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	margin-right: 20px;
+	padding-right: 0;
+}
+
+@media screen and (max-width: 539px) {
+	.lc-notice {
+		flex-wrap: wrap;
+	}
+
+	.lc-notice-logo {
+		display: none;
+	}
+
+	#lc-connect-notice-button-column {
+		justify-content: flex-start;
+	}
+}
+
+/* Deactivation Feedback Form */
+
+#lc-deactivation-feedback-modal-overlay {
+	opacity: 0;
+	will-change: opacity;
+	transition: opacity 1s;
+}
+
+#lc-deactivation-feedback-modal-overlay.lc-modal-base__overlay--visible {
+	display: flex !important;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#lc-deactivation-feedback-modal-container .lc-modal-base__close {
+	top: 20px
+}
+
+#lc-deactivation-feedback-modal-container .lc-modal__header {
+	padding-bottom: 10px;
+}
+
+#lc-deactivation-feedback-form .lc-form-group {
+	margin: 0;
+}
+
+#lc-deactivation-feedback-modal-heading {
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: center;
+	justify-content: flex-start;
+}
+
+#lc-deactivation-feedback-logo {
+	max-width: 80px;
+	height: auto;
+	float: left;
+}
+
+#lc-deactivation-feedback-modal-title {
+	margin: 2px 0 0 8px;
+}
+
+#lc-deactivation-feedback-other-field {
+	display: none;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+#lc-deactivation-feedback-other-field .lc-textarea {
+	width: 100%;
+	resize: vertical;
+	min-height: 5em;
+	max-height: 10em;
+}
+
+.lc-field-error {
+	display: none;
+}
+
+#lc-deactivation-feedback-modal-skip-btn, #lc-deactivation-feedback-modal-submit-btn {
+	margin: 0 4px;
+}
+
+#lc-deactivation-feedback-modal-skip-btn {
+	border: none;
+	font-weight: 400;
+}

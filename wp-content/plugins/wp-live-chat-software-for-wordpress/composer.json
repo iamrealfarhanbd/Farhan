@@ -1,0 +1,27 @@
+{
+    "name": "livechatinc/wordpress-integration",
+    "description": "LiveChat for WordPress",
+    "type": "wordpress-module",
+    "license": "AFL 3.0",
+    "require": {
+        "ext-json": "^1.2",
+        "firebase/php-jwt": "^5.0",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "wp-coding-standards/wpcs": "^2.1",
+        "phpunit/phpunit": "~5.7",
+        "brain/monkey": "^2.3",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "LiveChat\\": "plugin_files/"
+        },
+        "classmap": [
+            "plugin_files/"
+        ]
+    }
+}

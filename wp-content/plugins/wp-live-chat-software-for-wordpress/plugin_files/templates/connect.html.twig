@@ -1,0 +1,48 @@
+<div id="lc-container"></div>
+
+<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,es6,fetch,Array.prototype.includes,Object.keys,Symbol.iterator&flags=gated" type="text/javascript"></script>
+<script>
+    var LC_TOKEN = '{{ lcToken }}';
+    var STORE_TOKEN = '{{ storeToken }}';
+    var SITE_URL = '{{ siteUrl }}';
+    var USER_EMAIL = '{{ userEmail }}';
+    var WP_VER = '{{ wpVer }}';
+    var MODULE_VER = '{{ moduleVer }}';
+    (function () {
+        var interval = setInterval(function () {
+            if (window.AppBridge === undefined) {
+                return;
+            }
+            clearInterval(interval);
+
+            function userSignedInHandler(userToken, storeToken) {
+                jQuery.ajax({
+                    url: ajaxurl, //ajaxurl is WP global variable
+                    type: 'POST',
+                    data: {
+                        action: 'lc_connect',
+                        user_token: userToken,
+                        store_token: storeToken,
+                        security: ajax_nonce.value
+                    }
+                });
+            }
+
+            var eventsRegister = new AppBridge.EventsRegister();
+            eventsRegister.register(AppBridge.UserSignedInEvent, data => userSignedInHandler(data.userToken, data.storeToken));
+
+            AppBridge.AppBridgeParent.init('wordpress', eventsRegister, document.getElementById('lc-container'), '{{ appUrl }}').then(bridge => {
+                document.getElementsByTagName('iframe')[0].classList.add('lc-iframe');
+                if (LC_TOKEN) {
+                    return bridge.call(new AppBridge.SignInCommand(LC_TOKEN, bridge.platform, WP_VER, MODULE_VER));
+                }
+
+                if (STORE_TOKEN) {
+                    return bridge.call(new AppBridge.JoinCommand(STORE_TOKEN, USER_EMAIL, bridge.platform, WP_VER, MODULE_VER));
+                }
+
+                return bridge.call(new AppBridge.ConnectCommand(SITE_URL, USER_EMAIL, bridge.platform, WP_VER, MODULE_VER));
+            });
+        }, 100);
+    })();
+</script>
